@@ -30,13 +30,23 @@ p6df::modules::cucumber::vscodes() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::cucumber::langs()
+# Function: str str = p6df::modules::cucumber::prompt::line()
 #
+#  Returns:
+#	str - str
+#
+#  Environment:	 DEBUG
 #>
 ######################################################################
-p6df::modules::cucumber::langs() {
+p6df::modules::cucumber::prompt::line() {
 
-  p6_js_npm_global_install "@cucumber/cucumber"
+  local str
 
-  p6_return_void
+  if ! p6_string_blank "$DEBUG"; then
+    str="cucumber:\t  DEBUG=$DEBUG"
+  fi
+
+
+  p6_return_str "$str"
 }
+

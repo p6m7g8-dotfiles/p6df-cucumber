@@ -45,8 +45,8 @@
 #### p6df-cucumber/init.zsh:
 
 - p6df::modules::cucumber::deps()
-- p6df::modules::cucumber::langs()
 - p6df::modules::cucumber::vscodes()
+- str str = p6df::modules::cucumber::prompt::line()
 
 
 
