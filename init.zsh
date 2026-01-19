@@ -8,7 +8,6 @@
 ######################################################################
 p6df::modules::cucumber::deps() {
   ModuleDeps=(
-    p6m7g8-dotfiles/p6common
     p6m7g8-dotfiles/p6df-js
   )
 }
@@ -30,7 +29,7 @@ p6df::modules::cucumber::vscodes() {
 ######################################################################
 #<
 #
-# Function: str str = p6df::modules::cucumber::prompt::line()
+# Function: str str = p6df::modules::cucumber::prompt::mod()
 #
 #  Returns:
 #	str - str
@@ -38,14 +37,13 @@ p6df::modules::cucumber::vscodes() {
 #  Environment:	 DEBUG
 #>
 ######################################################################
-p6df::modules::cucumber::prompt::line() {
+p6df::modules::cucumber::prompt::mod() {
 
   local str
 
   if ! p6_string_blank "$DEBUG"; then
     str="cucumber:\t  DEBUG=$DEBUG"
   fi
-
 
   p6_return_str "$str"
 }
