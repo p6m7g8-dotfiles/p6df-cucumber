@@ -21,7 +21,7 @@ p6df::modules::cucumber::deps() {
 ######################################################################
 p6df::modules::cucumber::vscodes() {
 
-  code --install-extension alexkrechik.cucumberautocomplete
+  p6df::modules::vscode::extension::install alexkrechik.cucumberautocomplete
 
   p6_return_void
 }
