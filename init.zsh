@@ -41,7 +41,7 @@ p6df::modules::cucumber::prompt::mod() {
 
   local str
 
-  if ! p6_string_blank "$DEBUG"; then
+  if p6_string_blank_NOT "$DEBUG"; then
     str="cucumber:\t  DEBUG=$DEBUG"
   fi
 
