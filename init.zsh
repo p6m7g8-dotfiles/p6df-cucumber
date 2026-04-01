@@ -29,22 +29,15 @@ p6df::modules::cucumber::vscodes() {
 ######################################################################
 #<
 #
-# Function: str str = p6df::modules::cucumber::prompt::mod()
+# Function: words cucumber $DEBUG = p6df::modules::cucumber::profile::mod()
 #
 #  Returns:
-#	str - str
+#	words - cucumber $DEBUG
 #
 #  Environment:	 DEBUG
 #>
 ######################################################################
-p6df::modules::cucumber::prompt::mod() {
+p6df::modules::cucumber::profile::mod() {
 
-  local str
-
-  if p6_string_blank_NOT "$DEBUG"; then
-    str="cucumber:\t  DEBUG=$DEBUG"
-  fi
-
-  p6_return_str "$str"
+  p6_return_words 'cucumber' '$DEBUG'
 }
-
