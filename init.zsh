@@ -39,5 +39,6 @@ p6df::modules::cucumber::vscodes() {
 ######################################################################
 p6df::modules::cucumber::profile::mod() {
 
+  # shellcheck disable=SC2016
   p6_return_words 'cucumber' '$DEBUG'
 }
