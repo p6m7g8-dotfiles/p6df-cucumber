@@ -37,7 +37,7 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::cucumber::deps()`
 - `p6df::modules::cucumber::vscodes()`
-- `str str = p6df::modules::cucumber::prompt::mod()`
+- `words cucumber = p6df::modules::cucumber::profile::mod()`
 
 ## Hierarchy
 

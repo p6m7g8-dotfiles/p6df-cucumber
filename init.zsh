@@ -29,10 +29,10 @@ p6df::modules::cucumber::vscodes() {
 ######################################################################
 #<
 #
-# Function: words cucumber $DEBUG = p6df::modules::cucumber::profile::mod()
+# Function: words cucumber = p6df::modules::cucumber::profile::mod()
 #
 #  Returns:
-#	words - cucumber $DEBUG
+#	words - cucumber
 #
 #  Environment:	 DEBUG
 #>
